@@ -32,9 +32,9 @@ func (a *SendMailActivity) Metadata() *activity.Metadata {
 // Eval implements activity.Activity.Eval
 func (a *SendMailActivity) Eval(ctx activity.Context) (done bool, err error) {
 
-	arcpnt := ctx.GetInput("Arcpnt").(string)
-	bsub := ctx.GetInput("Bsub").(string)
-	cbody := ctx.GetInput("Cbody").(string)
+	arcpnt := ctx.GetInput("arcpnt").(string)
+	bsub := ctx.GetInput("bsub").(string)
+	cbody := ctx.GetInput("cbody").(string)
 	
 	
 	// Set up authentication information.
