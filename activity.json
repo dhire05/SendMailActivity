@@ -1,0 +1,35 @@
+{
+  "name": "SendMailActivity",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "ref": "github.com/purna-s/SendMailActivity",  
+  "title": "SendMailActivityv01",
+  "description": "Send mail to recipient",
+  "author": "dhire05",
+
+  "inputs":[
+    
+    {
+      "name": "arcpnt",
+      "type": "string",
+      "required": true
+    },
+	{
+      "name": "bsub",
+      "type": "string",
+      "required": true
+    },
+	{
+      "name": "cbody",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output",
+      "type": "any"
+    }
+  ]
+
+}
